@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-comercio</title>
+  <meta name="description" content="Tienda e-comercio: laptops, celulares, televisores y computadoras.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="inicio">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="chrome-header"></div>
+  <main id="contenido">
+    <div class="hero-wrap">
+      <div class="container">
+        <section class="hero" aria-roledescription="carrusel" aria-label="Promociones">
+          <button class="hero-arrow hero-prev" type="button" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+          </button>
+          <article class="hero-slide is-active">
+            <div class="hero-copy">
+              <h1>Descubre los mejores productos para ti</h1>
+              <p>Calidad, precio y confianza en un solo lugar.</p>
+              <a class="btn" href="#ofertas">Ver ofertas</a>
+            </div>
+            <div class="hero-visual">
+              <img src="img/1-laptop.avif" alt="Laptop milonizada">
+              <img class="hero-side" src="img/2-celular.avif" alt="">
+              <span class="hero-badge"><span>HASTA</span><strong>20%</strong><span>OFF</span></span>
+            </div>
+          </article>
+          <article class="hero-slide">
+            <div class="hero-copy">
+              <h1>Ofertas en electrónica</h1>
+              <p>Televisores y celulares seleccionados, con descuento visible en cada ficha.</p>
+              <a class="btn" href="productos.html">Ver productos</a>
+            </div>
+            <div class="hero-visual">
+              <img src="img/3-television.avif" alt="Televisor milonizado">
+              <span class="hero-badge"><span>HASTA</span><strong>20%</strong><span>OFF</span></span>
+            </div>
+          </article>
+          <article class="hero-slide">
+            <div class="hero-copy">
+              <h1>Arma tu escritorio</h1>
+              <p>La CPU milonizada, lista para estudiar, trabajar y jugar.</p>
+              <a class="btn" href="productos.html?cat=computacion">Ver CPU</a>
+            </div>
+            <div class="hero-visual">
+              <img src="img/4-cpu.png" alt="CPU milonizado">
+              <span class="hero-badge"><span>HASTA</span><strong>15%</strong><span>OFF</span></span>
+            </div>
+          </article>
+          <button class="hero-arrow hero-next" type="button" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+          </button>
+          <div class="hero-dots"></div>
+        </section>
+      </div>
+    </div>
+
+    <section class="section" id="categorias">
+      <div class="container">
+        <div class="section-head">
+          <h2>Categorías populares</h2>
+          <a href="productos.html">Ver todas</a>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="ofertas">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ofertas del día</h2>
+          <a href="productos.html">Ver todos</a>
+        </div>
+        <div class="product-grid" id="offer-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container trust">
+        <article>
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h11v8H3z"></path><path d="M14 10h4l3 3v2h-7z"></path><circle cx="7" cy="17.5" r="1.5"></circle><circle cx="17" cy="17.5" r="1.5"></circle></svg>
+          <div>
+            <h3>Envío gratis</h3>
+            <p>En pedidos mayores a $ 50.000</p>
+          </div>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.2-5.6"></path><path d="M4 4v5h5"></path></svg>
+          <div>
+            <h3>Devoluciones fáciles</h3>
+            <p>30 días para cambios</p>
+          </div>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+          <div>
+            <h3>Pagos seguros</h3>
+            <p>Protegemos tu información</p>
+          </div>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0"></path><rect x="3" y="13" width="4" height="7" rx="1"></rect><rect x="17" y="13" width="4" height="7" rx="1"></rect></svg>
+          <div>
+            <h3>Soporte 24/7</h3>
+            <p>Estamos para ayudarte</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <noscript>
+      <p class="container notice">Activa JavaScript para ver los productos y usar el carrito de demostración.</p>
+    </noscript>
+  </main>
+  <div id="chrome-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
